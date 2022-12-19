@@ -375,8 +375,8 @@ img.man-icons {
 .project-container {
   gap: 2rem;
   max-width: 1024px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display:block;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   /* column-gap: 2rem; */
   width: calc(100% - 2rem);
   margin: auto;
@@ -385,11 +385,16 @@ img.man-icons {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  margin-bottom: 50px;
+
 }
 .project-img img {
   transition: 1s;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  width: 75%;
+  padding-left: 20%;
+  
 }
 .project-img img:hover {
   transform: scale(1.1);
